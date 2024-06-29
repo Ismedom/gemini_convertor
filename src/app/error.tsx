@@ -1,9 +1,7 @@
-"use client";
+// import React from "react";
 
-import React from "react";
-
-const Error = () => {
-  return <div>Error</div>;
+const error = () => {
+  return <div>Something When Wrong!</div>;
 };
 
-export default Error;
+export default error;
