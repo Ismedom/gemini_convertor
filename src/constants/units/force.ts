@@ -1,18 +1,23 @@
-export const force = [
+interface ForceUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const force: ForceUnit[] = [
   {
-    Kilonewton: 0.001,
     unit: "kN",
+    conversionFactor: 0.001,
   },
   {
-    Dyne: 100000,
     unit: "dyn",
+    conversionFactor: 100000,
   },
   {
-    "Pound-Force": 0.224809,
     unit: "lbf",
+    conversionFactor: 0.224809,
   },
   {
-    "Kilogram-Force": 0.101972,
     unit: "kgf",
+    conversionFactor: 0.101972,
   },
 ];

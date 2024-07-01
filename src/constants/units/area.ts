@@ -1,34 +1,39 @@
-export const area = [
+interface AreaUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const area: AreaUnit[] = [
   {
-    "Square Kilometer": 1e-6,
     unit: "km²",
+    conversionFactor: 1e-6,
   },
   {
-    "Square Centimeter": 10000,
     unit: "cm²",
+    conversionFactor: 10000,
   },
   {
-    "Square Millimeter": 1000000,
     unit: "mm²",
+    conversionFactor: 1000000,
   },
   {
-    "Square Inch": 1550.0031,
     unit: "in²",
+    conversionFactor: 1550.0031,
   },
   {
-    "Square Foot": 10.7639,
     unit: "ft²",
+    conversionFactor: 10.7639,
   },
   {
-    "Square Yard": 1.19599,
     unit: "yd²",
+    conversionFactor: 1.19599,
   },
   {
-    Acre: 0.000247105,
     unit: "ac",
+    conversionFactor: 0.000247105,
   },
   {
-    Hectare: 0.0001,
     unit: "ha",
+    conversionFactor: 0.0001,
   },
 ];

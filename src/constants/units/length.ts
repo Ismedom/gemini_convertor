@@ -1,39 +1,43 @@
-//
-export const lengthUnit = [
+interface LengthUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const lengthUnit: LengthUnit[] = [
   {
-    Kilometer: 0.001,
     unit: "km",
+    conversionFactor: 0.001,
   },
   {
-    Centimeter: 100,
     unit: "cm",
+    conversionFactor: 100,
   },
   {
-    Millimeter: 1000,
     unit: "mm",
+    conversionFactor: 1000,
   },
   {
-    Micrometer: 1000000,
     unit: "µm",
+    conversionFactor: 1000000,
   },
   {
-    Nanometer: 1000000000,
     unit: "nm",
+    conversionFactor: 1000000000,
   },
   {
-    Inch: 39.3701,
     unit: "in",
+    conversionFactor: 39.3701,
   },
   {
-    Foot: 3.28084,
     unit: "ft",
+    conversionFactor: 3.28084,
   },
   {
-    Yard: 1.09361,
     unit: "yd",
+    conversionFactor: 1.09361,
   },
   {
-    Mile: 0.000621371,
     unit: "mi",
+    conversionFactor: 0.000621371,
   },
 ];

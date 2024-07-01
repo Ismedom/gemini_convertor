@@ -1,30 +1,35 @@
-export const mass = [
+interface AngularRadian {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const mass: AngularRadian[] = [
   {
-    Gram: 1000,
     unit: "g",
+    conversionFactor: 1000,
   },
   {
-    Milligram: 1000000,
     unit: "mg",
+    conversionFactor: 1000000,
   },
   {
-    Microgram: 1000000000,
     unit: "µg",
+    conversionFactor: 1000000000,
   },
   {
-    Ton: 0.001,
     unit: "t",
+    conversionFactor: 0.001,
   },
   {
-    Pound: 2.20462,
     unit: "lb",
+    conversionFactor: 2.20462,
   },
   {
-    Ounce: 35.274,
     unit: "oz",
+    conversionFactor: 35.274,
   },
   {
-    Stone: 0.157473,
     unit: "st",
+    conversionFactor: 0.157473,
   },
 ];

@@ -1,30 +1,35 @@
-export const energy = [
+interface EnergyUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const energy: EnergyUnit[] = [
   {
-    Kilojoule: 0.001,
     unit: "kJ",
+    conversionFactor: 0.001,
   },
   {
-    Calorie: 0.239006,
     unit: "cal",
+    conversionFactor: 0.239006,
   },
   {
-    Kilocalorie: 0.000239006,
     unit: "kcal",
+    conversionFactor: 0.000239006,
   },
   {
-    "Watt-Hour": 0.000277778,
     unit: "Wh",
+    conversionFactor: 0.000277778,
   },
   {
-    "Kilowatt-Hour": 2.77778e-7,
     unit: "kWh",
+    conversionFactor: 2.77778e-7,
   },
   {
-    Electronvolt: 6.242e18,
     unit: "eV",
+    conversionFactor: 6.242e18,
   },
   {
-    "British Thermal Unit": 0.000947817,
     unit: "BTU",
+    conversionFactor: 0.000947817,
   },
 ];

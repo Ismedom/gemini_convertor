@@ -1,14 +1,19 @@
-export const angularRadian = [
+interface AngularRadian {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const angularRadian: AngularRadian[] = [
   {
-    Degree: 57.2958,
     unit: "°",
+    conversionFactor: 57.2958,
   },
   {
-    Gradian: 63.662,
     unit: "gon",
+    conversionFactor: 63.662,
   },
   {
-    Revolution: 0.159155,
     unit: "rev",
+    conversionFactor: 0.159155,
   },
 ];

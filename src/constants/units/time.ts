@@ -1,26 +1,31 @@
-export const time = [
+interface TimeUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const time: TimeUnit[] = [
   {
-    Millisecond: 1000,
     unit: "ms",
+    conversionFactor: 1000,
   },
   {
-    Microsecond: 1000000,
     unit: "µs",
+    conversionFactor: 1000000,
   },
   {
-    Nanosecond: 1000000000,
     unit: "ns",
+    conversionFactor: 1000000000,
   },
   {
-    Minute: 0.0166667,
     unit: "min",
+    conversionFactor: 0.0166667,
   },
   {
-    Hour: 0.000277778,
     unit: "hr",
+    conversionFactor: 0.000277778,
   },
   {
-    Day: 1.15741e-5,
     unit: "d",
+    conversionFactor: 1.15741e-5,
   },
 ];
